@@ -15,7 +15,7 @@
 			$image = apply_filters( 'dominant_colors', $image, $pId  );
 		?>
 			<div class="client">
-				<a href="<?php echo $clientLink; ?>">
+				<a href="<?php echo $clientLink; ?>" target="_blank">
 				<img src="<?php echo $image; ?>"  alt="<?php echo $client['alt']; ?>" loading="lazy">
 				
 				</a>

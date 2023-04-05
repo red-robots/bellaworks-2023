@@ -1556,20 +1556,20 @@ section.testis {
 		padding: 40px 0;
 	}
 	.testi {
-		width: 90%;
-		margin: 20px auto;
+		// width: 90%;
+		// margin: 20px auto;
 		background-color: #fff;
 		// @include  boxshadow();
 		@include transition(all ease .2s);
-		padding: 20px;
-		border: 5px solid #eee;
+		padding: 40px;
+		// border: 5px solid #eee;
 		@media screen and (min-width: $tabwidth) {
-			width: auto;
+			// width: 30%;
 			margin: auto;
-			flex-basis: 28%;
+			// flex-basis: 28%;
 		}
 		&:hover {
-			@include  shadowhover();
+			// @include  shadowhover();
 		}
 		.names {
 			margin: 20px 0;
@@ -1578,10 +1578,10 @@ section.testis {
 	}
 	.testflex {
 		@media screen and (min-width: $tabwidth) {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
+			// display: flex;
+			// flex-direction: row;
+			// justify-content: space-between;
+			// align-items: center;
 		}
 	}
 }

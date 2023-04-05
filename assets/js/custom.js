@@ -81,11 +81,36 @@ jQuery(document).ready(function ($) {
   *	Flexslider
   *
   ------------------------------------*/
+  // $('.flexslider').flexslider({
+  // 	animation: "slide",
+  // 	animationLoop: true,
+  //     itemWidth: 300,
+  //     itemMargin: 10
+  // }); // end register flexslider
+
+  /*
+  *
+  *	Testimonial Flexslider
+  *
+  ------------------------------------*/
+
+  var getGridSize = function getGridSize() {
+    return window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 3;
+  };
 
   $('.flexslider').flexslider({
-    animation: "slide"
-  }); // end register flexslider
-
+    animation: "slide",
+    animationLoop: true,
+    itemWidth: 100,
+    itemMargin: 0,
+    minItems: getGridSize(),
+    // use function to pull in initial value
+    maxItems: getGridSize(),
+    // use function to pull in initial value
+    directionNav: true,
+    // controlNav: false,
+    slideshow: true
+  });
   /*
   *
   *	Colorbox
