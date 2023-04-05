@@ -1393,7 +1393,7 @@ nav.mobilemenu ul.sub li a:hover{color:#b7ac7f}
 html[xmlns] .flexslider .slides{display:block}
 * html .flexslider .slides{height:1%}
 .no-js .flexslider .slides>li:first-child{display:block}
-.flexslider{position:relative;zoom:1}
+.flexslider{background:#fff;position:relative;zoom:1}
 .flexslider .slides{zoom:1}
 .flexslider .slides img{height:auto}
 .flex-viewport{max-height:2000px;-webkit-transition:all 1s ease;transition:all 1s ease}
@@ -1792,7 +1792,7 @@ section.benefits ul{margin:0;padding:0;list-style:disc;list-style-position:insid
 section.benefits ul li{margin:0;padding:0 0 0 20px;font-size:1.3rem;margin:0 0 15px 0}
 section.testis{width:100%;padding:60px 5%}
 section.testis h2{font-size:2rem;width:100%;text-align:center;padding:40px 0}
-section.testis .testi{background-color:#fff;-webkit-transition:all ease .2s;transition:all ease .2s;padding:40px}
+section.testis .testi{background-color:#fff;-webkit-transition:all ease .2s;transition:all ease .2s;padding:40px;border:1px solid #fff}
 section.testis .testi .names{margin:20px 0;font-weight:bold}
 section.service-page .third{display:block}
 section.service-page .third h2{line-height:1;margin-bottom:10px}
