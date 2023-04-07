@@ -31,8 +31,8 @@
 <link rel="preload" href="https://use.typekit.net/ddx3hzt.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"></noscript>
 
-<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.min.css"></noscript>
+<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.min.css?v=2.21" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.min.css?v=2.21"></noscript>
 
 <!-- <link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"> -->
 

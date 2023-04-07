@@ -13,26 +13,63 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="wrapper">
 				<?php
-				while ( have_posts() ) : the_post(); ?>
-					<header class="entry-header">
-						<?php the_title( '<h1 class="single-title">', '</h1>' ); ?>
+				while ( have_posts() ) : the_post(); 
+					$client_logo = get_field('featured_image');
+					?>
+					<header class="entry-header portfolio-header">
+						<?php if($client_logo){ ?>
+							<div class="client-logo">
+								<img src="<?php echo $client_logo['url']; ?>" alt="<?php echo $client_logo['alt']; ?>">
+							</div>
+						<?php } ?>
+						<?php the_title( '<h1 class="portfolio-title">', '</h1>' ); ?>
 					
 					</header><!-- .entry-header -->
 
-					<?php if( has_post_thumbnail() ) { ?>
-						<div class="featured-image">
-							<?php the_post_thumbnail(); ?>
-						</div>
-					<?php } ?>
+					<section class="portfolio-top">
+
+						<article class="portfolio-post">
+							<?php the_content(); ?>
+							<?php //get_template_part('template-parts/single-side'); ?>
+							<div class="cta">
+								<h3>Ready to start your project?</h3>
+								<div class="button">
+									<div class="action">
+										<a href="<?php bloginfo('url'); ?>/lets-do-this">
+											<div class="circle">
+										      <span class="icon arrow"></span>
+										    </div>
+											<p class="button-text blue">Get a Quote.</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</article>
+						
+						<?php if(have_rows('gallery')): ?>
+							<div class="gallery">
+								<?php while(have_rows('gallery')): the_row(); 
+								$img = get_sub_field('image');
+								?>
+								<div class="img">
+									<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['alt']; ?>">
+								</div>
+							<?php endwhile; ?>
+							
+							</div>
+						<?php endif; ?>
+
+						
+
+
+					</section>
 
 					<div class="post-content">
 						<section class="post">
-							<article class="post">
-								<?php the_content(); ?>
-							</article>
+							
 						</section>
 						
-						<?php get_template_part('template-parts/single-side'); ?>
+						
 					</div>
 
 				<?php endwhile; // End of the loop.

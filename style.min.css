@@ -1194,10 +1194,13 @@ footer.site-footer h3.title::after,footer.site-footer h4.title::after,footer.sit
 header.entry-header{width:100%;float:left;color:#3689b4;line-height:1.1}
 header.entry-header h1.entry-title{font-size:.9rem;font-weight:700}
 header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem;font-weight:700;margin:1.5rem 0 1.5rem;text-transform:capitalize}
-header.entry-header h1.single-title{font-weight:700;font-size:2.5rem;color:#4e5356;text-transform:capitalize}
+header.entry-header h1.single-title,header.entry-header .portfolio-title{font-weight:700;font-size:2.5rem;color:#4e5356;text-transform:capitalize}
 header.entry-header h1.services-title{font-weight:700;font-size:2.5rem;color:#4e5356;text-transform:capitalize}
 header.entry-header .service-title{font-weight:700;font-size:1rem;color:#3689b4;text-transform:capitalize}
 .date{color:rgba(96,110,117,0.6);font-weight:700;margin:0 0 10px 0;font-size:.9rem}
+header.portfolio-header h1{clear:none;width:auto;margin:0}
+header.portfolio-header .client-logo{width:200px;float:left}
+header.portfolio-header .client-logo img{-webkit-filter:invert(1);filter:invert(1)}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
 blockquote{margin:0 1.5em}
@@ -1454,19 +1457,20 @@ body{font-family:futura-pt,sans-serif}
 .post-content{width:100%;float:left;padding:50px 0}
 section.post{width:100%;float:left}
 section.post img{max-width:100%}
-article.post{width:100%;float:left;font-size:1.3rem;color:#4e5356}
-article.post img{max-width:100%}
-article.post .headline{font-weight:700;font-size:3rem;color:#f37748;text-transform:capitalize;line-height:1;margin-bottom:10px}
-article.post .subhead{font-weight:700;font-size:1.7rem;color:#3689b4;margin-bottom:30px;font-style:italic;line-height:1}
-article.post a{-webkit-transition:all ease .2s;transition:all ease .2s;border-bottom:1px solid #f37748}
-article.post a:hover{background-color:#f37748;color:#fff}
-article.post .step{width:100%;float:left;margin:0 0 30px 0}
-article.post .step .num{width:100%;float:left;line-height:1;color:#fff;text-align:center;background:#3689b4;background:linear-gradient(218deg,#3689b4 0,#2d5265 100%);margin:0 0 30px 0}
-article.post .step .num .inum,article.post .step .num .stepper{width:100%;float:left;font-weight:bold}
-article.post .step .num .inum{font-size:10rem;padding:0 0 20px 0}
-article.post .step .num .stepper{font-size:2rem;padding:20px 0 0 0;text-transform:uppercase}
-article.post .step .copy{width:100%;float:left}
-article.post .step .copy h2{color:#3689b4}
+article.post{width:100%;float:left}
+article.post,article.portfolio-post{font-size:1.3rem;color:#4e5356}
+article.post img,article.portfolio-post img{max-width:100%}
+article.post .headline,article.portfolio-post .headline{font-weight:700;font-size:3rem;color:#f37748;text-transform:capitalize;line-height:1;margin-bottom:10px}
+article.post .subhead,article.portfolio-post .subhead{font-weight:700;font-size:1.7rem;color:#3689b4;margin-bottom:30px;font-style:italic;line-height:1}
+article.post a,article.portfolio-post a{-webkit-transition:all ease .2s;transition:all ease .2s;border-bottom:1px solid #f37748}
+article.post a:hover,article.portfolio-post a:hover{background-color:#f37748;color:#fff}
+article.post .step,article.portfolio-post .step{width:100%;float:left;margin:0 0 30px 0}
+article.post .step .num,article.portfolio-post .step .num{width:100%;float:left;line-height:1;color:#fff;text-align:center;background:#3689b4;background:linear-gradient(218deg,#3689b4 0,#2d5265 100%);margin:0 0 30px 0}
+article.post .step .num .inum,article.post .step .num .stepper,article.portfolio-post .step .num .inum,article.portfolio-post .step .num .stepper{width:100%;float:left;font-weight:bold}
+article.post .step .num .inum,article.portfolio-post .step .num .inum{font-size:10rem;padding:0 0 20px 0}
+article.post .step .num .stepper,article.portfolio-post .step .num .stepper{font-size:2rem;padding:20px 0 0 0;text-transform:uppercase}
+article.post .step .copy,article.portfolio-post .step .copy{width:100%;float:left}
+article.post .step .copy h2,article.portfolio-post .step .copy h2{color:#3689b4}
 .single-extras{width:100%;text-align:center}
 .footer-blocs{width:100%;float:left}
 .footer-blocs .bloc{margin:0 0 30px 0}
@@ -1734,6 +1738,7 @@ section.news .third .content footer.post .category a{padding:5px 10px;color:#4e5
 section.news .third .content footer.post .category a:hover{background-color:#3689b4;color:#fff}
 .featured-image{width:100%;margin:30px 0;float:left}
 .featured-image img{width:100%}
+section.portfolio-top{width:100%}
 section.our-clients{width:100%;text-align:center;color:#fff;background-color:#4e5356;float:left;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:40px 0}
 section.our-clients h3{margin:0 0 40px 0}
 section.our-clients .client{width:150px;margin:0 20px;opacity:.7}
@@ -1830,9 +1835,11 @@ embed,iframe,object{max-width:100%}
 @media(min-width:667px){nav.mobilemenu{padding:120px 90px 70px 90px}
 }@media screen and (min-width:767px){footer.site-footer h3.title::after,footer.site-footer h4.title::after,footer.site-footer h5.title::after,footer.site-footer h6.title::after{display:block}
 header.entry-header p.page-description,header.entry-header h1.page-description{font-size:3rem;margin:1.5rem 0 80px}
-header.entry-header h1.single-title{width:70%}
+header.entry-header h1.single-title,header.entry-header .portfolio-title{width:70%}
 header.entry-header h1.services-title{width:100%;margin:-80px 0 20px 0}
 header.entry-header .service-title{width:70%}
+header.portfolio-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+header.portfolio-header .client-logo{padding-right:50px}
 .main-navigation{clear:none;width:auto;float:right}
 .main-navigation .menu{max-height:1000px}
 .main-navigation ul{display:-webkit-box;display:-ms-flexbox;display:flex}
@@ -1851,10 +1858,11 @@ nav.mobilemenu{display:none}
 .logo,h1.logo{width:200px;margin:15px 0 0 0}
 .logo a,h1.logo a{width:200px}
 section.post{width:66.66667%;float:right}
-article.post .headline{font-size:3rem}
-article.post .subhead{font-size:1.7rem}
-article.post .step .num{width:25%;margin:0}
-article.post .step .copy{width:70%;float:right}
+article.portfolio-post{-ms-flex-preferred-size:45%;flex-basis:45%}
+article.post .headline,article.portfolio-post .headline{font-size:3rem}
+article.post .subhead,article.portfolio-post .subhead{font-size:1.7rem}
+article.post .step .num,article.portfolio-post .step .num{width:25%;margin:0}
+article.post .step .copy,article.portfolio-post .step .copy{width:70%;float:right}
 .single-extras{width:25%;text-align:left;float:left;margin-right:8.33333%}
 .site-footer .footer-logo{margin:0 0 30px 0}
 .third{width:33.33333%;float:left;text-align:left}
@@ -1926,6 +1934,8 @@ section.hero h3{font-size:1.6rem}
 section.secondary-hero p{font-size:1.6rem}
 section.work a.third{height:200px}
 section.news .third{width:30%;margin:1.5%}
+section.portfolio-top{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
+section.portfolio-top .featured-image,section.portfolio-top .gallery{-ms-flex-preferred-size:45%;flex-basis:45%}
 }@media screen and (min-width:1200px){header.entry-header p.page-description,header.entry-header h1.page-description{font-size:4rem}
 .page-template-page-lets-do-this .gform_wrapper{width:60%;margin:40px auto}
 .main-navigation{text-align:left}
@@ -1934,8 +1944,8 @@ section.news .third{width:30%;margin:1.5%}
 .herowrap{padding:0}
 #masthead{padding:50px 0}
 .button.herobtn{margin-right:20px}
-article.post .headline{font-size:3rem}
-article.post .subhead{font-size:1.7rem}
+article.post .headline,article.portfolio-post .headline{font-size:3rem}
+article.post .subhead,article.portfolio-post .subhead{font-size:1.7rem}
 #leadmagnet{width:60%}
 .home-flex section.image img{bottom:-100px;right:10%}
 section.hero{width:70%}

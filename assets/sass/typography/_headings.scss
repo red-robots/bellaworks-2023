@@ -73,7 +73,7 @@ header.entry-header {
 			font-size: 4rem;
 		}
 	}
-	h1.single-title {
+	h1.single-title, .portfolio-title {
 		// color: $color-light-blue;
 		// font-size: 4rem;
 		font-weight: 700;
@@ -131,7 +131,30 @@ header.entry-header {
 
 	}
 }
-
+header.portfolio-header {
+	@media screen and (min-width: $tabwidth) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	h1 {
+		clear: none;
+		width: auto;
+		margin: 0;
+	}
+	.client-logo {
+		width: 200px;
+		float: left;
+		@media screen and (min-width: $tabwidth) {
+			padding-right: 50px;
+		}
+		img {
+			filter: invert(1);
+		}
+	}
+}
 
 
 

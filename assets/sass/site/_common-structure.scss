@@ -253,6 +253,14 @@ section.post {
 article.post {
 	width: 100%;
 	float: left;
+}
+article.portfolio-post {
+	@media screen and (min-width: $tabwidth) {
+		flex-basis: 45%;
+	}
+}
+article.post, article.portfolio-post {
+	
 	font-size: 1.3rem;
 	color: $color-davy-grey;
 	@media screen and (min-width: $tabwidth) {

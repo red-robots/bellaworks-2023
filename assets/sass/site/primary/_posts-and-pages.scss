@@ -1102,8 +1102,26 @@ section.news {
 	width: 100%;
 	margin: 30px 0;
 	float: left;
+	@media screen and (min-width: $midwidth) {
+
+	}
 	img {
 		width: 100%;
+	}
+}
+section.portfolio-top {
+	width: 100%;
+	@media screen and (min-width: $midwidth) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.featured-image, .gallery {
+		@media screen and (min-width: $midwidth) {
+			flex-basis: 45%;
+		}
 	}
 }
 section.our-clients {
