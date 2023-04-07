@@ -16,9 +16,9 @@ get_header(); ?>
 				while ( have_posts() ) : the_post(); 
 					$client_logo = get_field('featured_image');
 					$siteLink = get_field('link_to_website');
-					echo '<pre>';
-					print_r($siteLink);
-					echo '</pre>';
+					// echo '<pre>';
+					// print_r($siteLink);
+					// echo '</pre>';
 					?>
 					<header class="entry-header portfolio-header">
 						<?php if($client_logo){ ?>
