@@ -14,8 +14,8 @@
 	<link rel="preload" href="https://use.typekit.net/ddx3hzt.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"></noscript>
 
-	<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css"></noscript>
+	<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.css?v=4.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=4.4"></noscript>
 
 	<!-- <link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"> -->
 
@@ -230,7 +230,9 @@ wp_head();
 
 
 					<section class="bw-story">
-						<p>At Bellaworks, we focus on finding the right solution for you. If you’re a start-up or working within a smaller budget, that doesn’t mean you shouldn’t be able to afford a stellar website that represents your brand. We can provide a variety of site design options that provide you with a professional, conversion-optimized site you can be proud of.</p>
+						<div class="wrap-story">
+							<p>At Bellaworks, we focus on finding the right solution for you. If you’re a start-up or working within a smaller budget, that doesn’t mean you shouldn’t be able to afford a stellar website that represents your brand. We can provide a variety of site design options that provide you with a professional, conversion-optimized site you can be proud of.</p>
+						</div>
 					</section>
 
 

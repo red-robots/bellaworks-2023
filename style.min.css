@@ -1599,11 +1599,11 @@ section.landing-hero h1{color:#fff;font-size:80px;position:relative}
 section.landing-hero h1.template{width:80%;margin:0 auto}
 section.landing-hero h1.template span{width:auto;position:relative}
 section.landing-hero h1.template span:before{content:"";position:absolute;left:50%;bottom:7px;width:100%;height:14px;-webkit-transform:skew(-12deg) translateX(-50%);transform:skew(-12deg) translateX(-50%);background:#f37748;z-index:1}
-section.landing-hero .subhead{color:rgba(255,255,255,0.8);font-size:22px;width:40%;margin:0 auto 50px auto}
+section.landing-hero .subhead{color:rgba(255,255,255,0.8);font-size:22px;width:80%;margin:0 auto 50px auto}
 section.landing-hero .subhead.template{color:#f37748;background-color:#fff;padding:20px;font-size:28px;text-transform:capitalize;font-weight:bold;margin-top:40px;-webkit-transform:skew(-12deg) translateX(0);transform:skew(-12deg) translateX(0)}
 section.landing-hero .turd{width:100%;font-size:32px;color:#fff;text-align:center;font-weight:bold;margin-bottom:30px;background:black;text-transform:uppercase;background:radial-gradient(circle,rgba(0,0,0,0) 0,#3689b4 100%)}
 section.landing-what{width:100%;float:left;text-align:center;padding:60px 0}
-section.landing-what .row{width:60%;margin:60px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+section.landing-what .row{width:90%;margin:60px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 section.landing-what .row.even{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 section.landing-what .row.odd{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 section.landing-what .row .left.even{-ms-flex-preferred-size:30%;flex-basis:30%}
@@ -1616,7 +1616,7 @@ section.landing-what p{font-size:18px}
 section.landing-what p.template{font-size:22px;line-height:1.2}
 section.landing-saying{background-color:#efefef;width:100%;padding:60px 0;float:left;text-align:center}
 section.landing-saying h2{width:100%;float:left;padding:20px 0 50px 0;color:#4e5356;font-size:40px}
-section.landing-saying .testimonials .testi{background-color:#fff;padding:30px;line-height:1.2;font-size:20px}
+section.landing-saying .testimonials .testi{background-color:#fff;padding:30px;line-height:1.2;font-size:20px;text-align:left;margin-bottom:30px;float:left}
 section.landing-saying .testimonials .testi .who{width:100%;float:left;font-weight:bold;margin-top:15px}
 section.guide{width:100%;background-color:#3689b4;color:#fff;padding:60px 0;float:left}
 section.guide .left{width:50%;padding:50px;float:left;text-align:left}
@@ -1628,16 +1628,16 @@ section.guide p{font-size:24px}
 section.guide ul{margin:0 auto;font-size:20px;padding-left:30px}
 section.guide ul li{margin-bottom:10px}
 section.landing-why{width:100%;padding:60px 0;float:left;text-align:center}
-section.landing-why .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-section.landing-why .row{-ms-flex-preferred-size:30%;flex-basis:30%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-section.landing-why .row .icon{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:70%}
+section.landing-why .row{margin-bottom:30px}
+section.landing-why .row .icon{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:100%}
 section.landing-why h2{margin:0 0 40px 0;font-size:40px;color:#3689b4}
 section.landing-why h3{margin:0 0 10px 0;padding:20px;background-color:#3689b4;color:#fff}
 section.landing-why p{font-size:28px}
-section.landing-why .circle{width:50px;height:50px;border-radius:50%;background-color:#3689b4;color:#fff;margin:0 auto 20px auto;line-height:50px;font-size:30px}
+section.landing-why .circle{width:100px;height:100px;border-radius:50%;background-color:#3689b4;color:#fff;margin:0 auto 20px auto;line-height:100px;font-size:30px}
 section.landing-start{width:100%;float:left;text-align:center;padding:40px 0}
 section.bw-story{width:100%;background-color:#3689b4;color:#fff;padding:100px;float:left}
-section.bw-story p{margin:0 auto}
+section.bw-story .wrap-story{width:90%;margin:0 auto}
+section.bw-story p{font-size:30px;line-height:1.2}
 .sticky{display:block}
 .home-banner{width:100%;height:95vh;background:#3689b4;background:linear-gradient(151deg,#3689b4 0,#2d5265 100%);margin:0;position:relative;background-image:url(images/cityscape-2023-small.png);background-color:#3689b4;background-repeat:repeat-x;background-position:bottom right}
 .home-banner .hinter{width:100%;text-align:center;width:100%;float:left;color:#fff;height:10vh;font-size:40px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;clear:both;display:none}
@@ -1895,11 +1895,8 @@ ul.footer-social,ul.side-social{-webkit-box-pack:start;-ms-flex-pack:start;justi
 ul.footer-social li,ul.side-social li{margin:0 1.24615em 0 0}
 ul.side-social li{margin:0 .8em 0 0}
 #leadmagnet{width:80%;margin:auto}
-section.landing-saying .testimonials{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-section.landing-saying .testimonials .testi{-ms-flex-preferred-size:30%;flex-basis:30%;text-align:left}
 section.guide .left .imgwrap{width:60%;float:right}
 section.guide .right .imgwrap{width:60%;float:right}
-section.bw-story p{width:50%;font-size:30px;line-height:1.2}
 .home-banner{height:95vh}
 .home-banner .hinter{position:absolute;bottom:50px;left:0;display:block}
 .colflex{height:65%}
@@ -1974,6 +1971,15 @@ section.portfolio-top .featured-image,section.portfolio-top .gallery{-ms-flex-pr
 article.post .headline,article.portfolio-post .headline{font-size:3rem}
 article.post .subhead,article.portfolio-post .subhead{font-size:1.7rem}
 #leadmagnet{width:60%}
+section.landing-hero .subhead{width:40%}
+section.landing-what .row{width:60%}
+section.landing-saying .testimonials{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+section.landing-saying .testimonials .testi{-ms-flex-preferred-size:30%;flex-basis:30%;text-align:left;float:none}
+section.landing-why .flex{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+section.landing-why .row{-ms-flex-preferred-size:30%;flex-basis:30%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:0}
+section.landing-why .row .icon{width:70%}
+section.landing-why .circle{width:50px;height:50px;line-height:50px}
+section.bw-story .wrap-story{width:50%}
 .home-flex section.image img{bottom:-100px;right:10%}
 section.hero{width:70%}
 section.hero h2{font-size:4rem}
