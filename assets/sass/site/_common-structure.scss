@@ -579,6 +579,7 @@ section.landing {
 	float: left;
 	padding: 0 0 160px 0;
 	border-bottom: 50px solid $color-light-blue;
+	line-height: 1.1;
 	.action.last {
 		width: 22rem;
 	}
@@ -588,15 +589,60 @@ section.landing-hero {
 	background-color: $color-light-blue;
 	text-align: center;
 	padding: 150px 0;
+	&.template {
+		padding: 150px 0 50px 0;
+	}
 	h1 {
 		color: #fff;
 		font-size: 80px;
+		position: relative;
+		&.template {
+			width: 80%;
+			margin: 0 auto;
+			span {
+				width: auto;
+				position: relative;
+				&:before {
+					content: "";
+					position: absolute;
+					left: 50%;
+					bottom: 7px;
+					width: 100%;
+					height: 14px;
+					transform: skew(-12deg) translateX(-50%);
+					background: rgba($color-mandarin,1);
+					z-index: 1;
+				}
+			}
+		}
 	}
 	.subhead {
 		color: rgba(#fff, .8);
 		font-size: 22px;
 		width: 40%;
 		margin: 0 auto 50px auto;
+		&.template {
+			color: $color-mandarin;
+			background-color: #fff;
+			padding: 20px;
+			font-size: 28px;
+			text-transform: capitalize;
+			font-weight: bold;
+			// width: auto;
+			margin-top: 40px;
+			transform: skew(-12deg) translateX(-0%);
+		}
+	}
+	.turd {
+		width: 100%;
+		font-size: 32px;
+		color: #fff;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 30px;
+		background: rgb(0,0,0);
+		text-transform: uppercase;
+		background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba($color-light-blue,1) 100%);
 	}
 }
 section.landing-what {
@@ -646,9 +692,17 @@ section.landing-what {
 	h2 {
 		font-size: 24px;
 		color: $color-light-blue;
+		&.template {
+			font-size: 26px;
+			margin-bottom: 20px;
+		}
 	}
 	p {
 		font-size: 18px;
+		&.template {
+			font-size: 22px;
+			line-height: 1.2;
+		}
 	}
 }
 section.landing-saying {
@@ -665,20 +719,82 @@ section.landing-saying {
 		font-size: 40px;
 	}
 	.testimonials {
+		@media screen and (min-width: $tabwidth) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
 	
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-between;
 		.testi {
 			background-color: #fff;
-			padding: 20px;
-			flex-basis: 30%;
+			padding: 30px;
+			line-height: 1.2;
+			font-size: 20px;
+			@media screen and (min-width: $tabwidth) {
+				flex-basis: 30%;
+				text-align: left;
+			}
 			.who {
 				width: 100%;
 				float: left;
 				font-weight: bold;
+				margin-top: 15px;
 			}
+		}
+	}
+}
+section.guide {
+	width: 100%;
+	background-color: $color-light-blue;
+	color: #fff;
+	padding: 60px 0;
+	float: left;
+	.left {
+		width: 50%;
+		padding: 50px;
+		float: left;
+		text-align: left;
+		.imgwrap {
+			@media screen and (min-width: $tabwidth) {
+				width: 60%;
+				float: right;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.right {
+		width: 50%;
+		padding: 50px;
+		float: left;
+		.imgwrap {
+			@media screen and (min-width: $tabwidth) {
+				width: 60%;
+				float: right;
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+	h2 {
+		width: 100%;
+		// text-align: center;
+		margin-bottom: 26px;
+	}
+	p {
+		font-size: 24px;
+		// text-align: center;
+	}
+	ul {
+		// width: 40%;
+		margin: 0 auto;
+		font-size: 20px;
+		padding-left: 30px;
+		li {
+			margin-bottom: 10px;
 		}
 	}
 }
@@ -716,10 +832,22 @@ section.landing-why {
 	}
 	h3 {
 		margin: 0 0 10px 0;
-		padding: 30px 0 0 0;
+		padding: 20px;
+		background-color: $color-light-blue;
+		color: #fff;
 	}
 	p {
-		font-size: 18px;
+		font-size: 28px;
+	}
+	.circle {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: $color-light-blue;
+		color: #fff;
+		margin: 0 auto 20px auto;
+		line-height: 50px;
+		font-size: 30px;
 	}
 }
 section.landing-start {
@@ -729,5 +857,21 @@ section.landing-start {
 	padding: 40px 0;
 	h2 {
 
+	}
+}
+section.bw-story {
+	width: 100%;
+	background-color: $color-light-blue;
+	color: #fff;
+	padding: 100px;
+	float: left;
+	p {
+		
+		margin: 0 auto;
+		@media screen and (min-width: $tabwidth) {
+			width: 50%;
+			font-size: 30px;
+			line-height: 1.2;
+		}
 	}
 }

@@ -154,6 +154,21 @@ header.portfolio-header {
 			filter: invert(1);
 		}
 	}
+	.visit-site {
+		width: auto;
+		margin-left: auto;
+		a {
+			padding: 10px 20px;
+			display: block;
+			background-color: $color-mandarin;
+			font-size: 20px;
+			color: #fff;
+			transition: all ease .2s;
+			&:hover {
+				padding-right: 25;
+			}
+		}
+	}
 }
 
 

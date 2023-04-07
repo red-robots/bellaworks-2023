@@ -15,6 +15,7 @@ get_header(); ?>
 				<?php
 				while ( have_posts() ) : the_post(); 
 					$client_logo = get_field('featured_image');
+					$siteLink = get_field('link_to_website');
 					?>
 					<header class="entry-header portfolio-header">
 						<?php if($client_logo){ ?>
@@ -23,7 +24,11 @@ get_header(); ?>
 							</div>
 						<?php } ?>
 						<?php the_title( '<h1 class="portfolio-title">', '</h1>' ); ?>
-					
+						<?php if($siteLink){ ?>
+							<div class="visit-site">
+								<a href="<?php echo $siteLink['url']; ?>" target="_blank">Visit Site <i class="fa-solid fa-chevron-right"></i></a>
+							</div>
+						<?php } ?>
 					</header><!-- .entry-header -->
 
 					<section class="portfolio-top">
