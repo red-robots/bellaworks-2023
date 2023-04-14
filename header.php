@@ -31,8 +31,8 @@
 <link rel="preload" href="https://use.typekit.net/ddx3hzt.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"></noscript>
 
-<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.min.css?v=2.22" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.min.css?v=2.22"></noscript>
+<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.min.css?v=2.23" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.min.css?v=2.23"></noscript>
 
 <!-- <link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"> -->
 
@@ -51,6 +51,16 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-3965114-1');
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNSP3NLQJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DNSP3NLQJ5');
 </script>
 
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>

@@ -580,8 +580,20 @@ section.landing {
 	padding: 0 0 160px 0;
 	border-bottom: 50px solid $color-light-blue;
 	line-height: 1.1;
+	// background-color: $color-light-blue;
 	.action.last {
 		width: 22rem;
+	}
+}
+.b-bg {
+	background-color: $color-light-blue;
+}
+.landing-logo {
+	width: 200px;
+	margin: 0 auto;
+	padding-top: 40px;
+	img {
+		width: 100%;
 	}
 }
 section.landing-hero {
@@ -594,11 +606,17 @@ section.landing-hero {
 	}
 	h1 {
 		color: #fff;
-		font-size: 80px;
+		font-size: 70px;
 		position: relative;
+		@media screen and (min-width: $deskwidth) {
+			font-size: 80px;
+		}
 		&.template {
-			width: 80%;
+			width: 90%;
 			margin: 0 auto;
+			@media screen and (min-width: $deskwidth) {
+				width: 80%;
+			}
 			span {
 				width: auto;
 				position: relative;
@@ -623,17 +641,21 @@ section.landing-hero {
 		margin: 0 auto 50px auto;
 		@media screen and (min-width: $deskwidth) {
 			width: 40%;
+			font-size: 22px;
 		}
 		&.template {
 			color: $color-mandarin;
 			background-color: #fff;
 			padding: 20px;
-			font-size: 28px;
+			font-size: 32px;
 			text-transform: capitalize;
 			font-weight: bold;
 			// width: auto;
 			margin-top: 40px;
 			transform: skew(-12deg) translateX(-0%);
+			@media screen and (min-width: $deskwidth) {
+				font-size: 28px;
+			}
 		}
 	}
 	.turd {
@@ -699,15 +721,21 @@ section.landing-what {
 		font-size: 24px;
 		color: $color-light-blue;
 		&.template {
-			font-size: 26px;
+			font-size: 34px;
 			margin-bottom: 20px;
+			@media screen and (min-width: $deskwidth) {
+				font-size: 26px;
+			}
 		}
 	}
 	p {
 		font-size: 18px;
 		&.template {
-			font-size: 22px;
+			font-size: 30px;
 			line-height: 1.2;
+			@media screen and (min-width: $deskwidth) {
+				font-size: 22px;
+			}
 		}
 	}
 }
@@ -736,7 +764,7 @@ section.landing-saying {
 			background-color: #fff;
 			padding: 30px;
 			line-height: 1.2;
-			font-size: 20px;
+			font-size: 32px;
 			text-align: left;
 			margin-bottom: 30px;
 			float: left;
@@ -744,6 +772,7 @@ section.landing-saying {
 				flex-basis: 30%;
 				text-align: left;
 				float: none;
+				font-size: 20px;
 			}
 			.who {
 				width: 100%;
@@ -761,12 +790,15 @@ section.guide {
 	padding: 60px 0;
 	float: left;
 	.left {
-		width: 50%;
+		width: 30%;
 		padding: 50px;
 		float: left;
 		text-align: left;
+		@media screen and (min-width: $deskwidth) {
+			width: 50%;
+		}
 		.imgwrap {
-			@media screen and (min-width: $tabwidth) {
+			@media screen and (min-width: $deskwidth) {
 				width: 60%;
 				float: right;
 			}
@@ -776,11 +808,14 @@ section.guide {
 		}
 	}
 	.right {
-		width: 50%;
+		width: 70%;
 		padding: 50px;
 		float: left;
+		@media screen and (min-width: $deskwidth) {
+			width: 50%;
+		}
 		.imgwrap {
-			@media screen and (min-width: $tabwidth) {
+			@media screen and (min-width: $deskwidth) {
 				width: 60%;
 				float: right;
 			}
@@ -795,14 +830,20 @@ section.guide {
 		margin-bottom: 26px;
 	}
 	p {
-		font-size: 24px;
+		font-size: 32px;
 		// text-align: center;
+		@media screen and (min-width: $deskwidth) {
+			font-size: 24px;
+		}
 	}
 	ul {
 		// width: 40%;
 		margin: 0 auto;
-		font-size: 20px;
+		font-size: 32px;
 		padding-left: 30px;
+		@media screen and (min-width: $deskwidth) {
+			font-size: 20px;
+		}
 		li {
 			margin-bottom: 10px;
 		}
@@ -855,9 +896,17 @@ section.landing-why {
 		padding: 20px;
 		background-color: $color-light-blue;
 		color: #fff;
+		font-size: 36px;
+		@media screen and (min-width: $deskwidth) {
+			font-size: 22px;
+			height: 90px;
+		}
 	}
 	p {
-		font-size: 28px;
+		font-size: 32px;
+		@media screen and (min-width: $deskwidth) {
+			font-size: 28px;
+		}
 	}
 	.circle {
 		width: 100px;

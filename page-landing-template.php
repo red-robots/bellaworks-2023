@@ -24,6 +24,18 @@
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="<?php bloginfo('template_url'); ?>/favicons/manifest.json">
 	<link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNSP3NLQJ5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-DNSP3NLQJ5');
+	</script>
+
+
 </head>
 
 
@@ -39,6 +51,7 @@
 wp_head();
 //get_header(); ?>
 <body>
+	
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
 
@@ -52,6 +65,15 @@ wp_head();
 				?>
 
 				<section class="landing">
+					<div class="b-bg">
+						<div class="wrapper ">
+							<div class="landing-logo">
+								<a href="<?php get_bloginfo('url'); ?>">
+									<img src="<?php bloginfo('template_url'); ?>/images/bellaworks-white.png" alt="Website Design & Development in Charlotte, NC">
+								</a>
+							</div>
+						</div>
+					</div>
 					<section class="landing-hero template">
 						<h1 class="template">Get a Professionally Designed Website In <span>Days</span> not Months</h1>
 						<div class="subhead template">Grow your business with smart digital marketing</div>
@@ -182,14 +204,14 @@ wp_head();
 
 					<section class="landing-why">
 						<h2>Process</h2>
-						<p>Get started in 3 easy steps:</p>
+						<p><b>Get started in 3 easy steps:</b></p>
 						<div class="flex wrapper">
 							<div class="row">
 								<div class="circle">1</div>
 								<div class="icon js-blocks">
 									<img src="<?php bloginfo('template_url'); ?>/images/landing-solution.png">
 								</div>
-								<h3>Think about your goals – what can a website help you do?</h3>
+								<h3 class="js-blocks">Think about your goals – what can a website help you do?</h3>
 								<!-- <p>We work with you to identify your unique website or marketing needs and suggest the right solutions for your budget.</p> -->
 							</div>
 							<div class="row">
@@ -197,7 +219,7 @@ wp_head();
 								<div class="icon js-blocks">
 									<img src="<?php bloginfo('template_url'); ?>/images/landing-communication.png">
 								</div>
-								<h3>Contact Bellaworks</h3>
+								<h3 class="js-blocks">Contact Bellaworks</h3>
 								<!-- <p>Our small team focuses on building a personal relationship with every client, and we’re always just a phone call or e-mail away.</p> -->
 							</div>
 							<div class="row">
@@ -205,7 +227,7 @@ wp_head();
 								<div class="icon js-blocks">
 									<img src="<?php bloginfo('template_url'); ?>/images/landing-service.png">
 								</div>
-								<h3>Compete and win online</h3>
+								<h3 class="js-blocks">Compete and win online</h3>
 								<!-- <p>We’re ready to be your all-in-one solution to building your website, developing your brand, and marketing your business.</p> -->
 							</div>
 						</div>
@@ -245,6 +267,16 @@ wp_head();
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php wp_footer(); ?>
+<?php //wp_footer(); ?>
+<?php get_footer(); ?>
+<!-- Google tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNSP3NLQJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DNSP3NLQJ5');
+</script> -->
 </body>
 </html>
