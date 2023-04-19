@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Build a Website and a Brand</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<!-- optionally increase loading priority -->
+	
 	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap">
 	<link href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
-	<!-- no-JS fallback -->
+	
 	<noscript>
 	    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap">
 	</noscript>
@@ -17,7 +17,7 @@
 	<link rel="preload" href="<?php bloginfo('template_url'); ?>/style.css?v=4.4" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=4.4"></noscript>
 
-	<!-- <link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"> -->
+
 
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_url'); ?>/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicons/favicon-32x32.png" sizes="32x32">
@@ -25,7 +25,7 @@
 	<link rel="manifest" href="<?php bloginfo('template_url'); ?>/favicons/manifest.json">
 	<link rel="mask-icon" href="<?php bloginfo('template_url'); ?>/favicons/safari-pinned-tab.svg" color="#5bbad5">
 
-	<!-- Google tag (gtag.js) -->
+	
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNSP3NLQJ5"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
@@ -36,7 +36,7 @@
 	</script>
 
 
-</head>
+</head> -->
 
 
 
@@ -48,8 +48,9 @@
  *
  * @package ACStarter
  */
-wp_head();
-//get_header(); ?>
+//wp_head();
+get_header();
+ ?>
 <body>
 	
 	<div id="primary" class="content-area-full">
@@ -65,7 +66,7 @@ wp_head();
 				?>
 
 				<section class="landing">
-					<div class="b-bg">
+					<!-- <div class="b-bg">
 						<div class="wrapper ">
 							<div class="landing-logo">
 								<a href="<?php get_bloginfo('url'); ?>">
@@ -73,10 +74,10 @@ wp_head();
 								</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<section class="landing-hero template">
 						<h1 class="template">Get a Professionally Designed Website In <span>Days</span> not Months</h1>
-						<div class="subhead template">Grow your business with smart digital marketing</div>
+						<div class="subhead template">Grow your business with<br>smart digital marketing</div>
 						<div class="turd">
 							Save money / Save time / Do it right
 						</div>
@@ -89,7 +90,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action">
-									<a class=" bob " href="#form">
+									<a class=" bob " href="<?php bloginfo('url'); ?>/new-site-form/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
@@ -105,7 +106,7 @@ wp_head();
 								<img  src="<?php bloginfo('template_url'); ?>/images/landing-create.png">
 							</div>
 							<div class="right even">
-								<h2 class="template">Stick to your business / Be Professional</h2>
+								<h2 class="template">Stick to your business</h2>
 								<p class="template">Spend your time building your business, not on trying to DIY your website. Hire experts or risk wasting time, money, and ruining your brand.</p>
 							</div>
 						</div>
@@ -140,7 +141,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action">
-									<a class=" bob " href="#form">
+									<a class=" bob " href="<?php bloginfo('url'); ?>/new-site-form/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
@@ -151,7 +152,7 @@ wp_head();
 						</div>
 					</section>
 
-					<section class="guide">
+					<!-- <section class="guide">
 						<div class="left">
 							<div class="imgwrap">
 								<img src="<?php bloginfo('template_url'); ?>/images/explain.png">
@@ -181,7 +182,7 @@ wp_head();
 								</div>
 							</div>
 						</div>
-					</section>
+					</section> -->
 
 					<section class="landing-saying">
 						<h2>What Our Customers Are Saying</h2>
@@ -239,7 +240,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action last">
-									<a class=" bob " href="#form">
+									<a class=" bob " href="<?php bloginfo('url'); ?>/new-site-form/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
