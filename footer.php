@@ -170,6 +170,6 @@
 
 	
 </script>
-
+<script src="<?php bloginfo('template_url'); ?>/js/scrolltrigger.js"></script>
 </body>
 </html>

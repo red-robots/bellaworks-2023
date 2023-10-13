@@ -28,6 +28,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap">
 </noscript>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
 <link rel="preload" href="https://use.typekit.net/ddx3hzt.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/ddx3hzt.css"></noscript>
 
@@ -94,7 +98,18 @@
 }
 </script>
 
+
+
+
+
 <?php wp_head(); ?>
+
+<style type="text/css">
+	[data-hidden] {
+		opacity: 0;
+
+	}
+</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -142,7 +157,41 @@
 							?>
 						<!-- <h2><?php //echo $herotext; ?></h2>
 						<h3><?php //echo $herosmall; ?></h3> -->
-						<h2>GROW YOUR BUSINESS<br>AND YOUR BRAND</h2>
+						<h2 data-hidden >
+							<span>G</span>
+							<span>R</span>
+							<span>O</span>
+							<span>W</span>
+							<span>&nbsp;</span>
+							<span>Y</span>
+							<span>O</span>
+							<span>U</span>
+							<span>R</span>
+							<span>&nbsp;</span>
+							<span>B</span>
+							<span>U</span>
+							<span>S</span>
+							<span>I</span>
+							<span>N</span>
+							<span>E</span>
+							<span>S</span>
+							<span>S</span>
+							<br>
+							<span>A</span>
+							<span>N</span>
+							<span>D</span>
+							<span>&nbsp;</span>
+							<span>Y</span>
+							<span>O</span>
+							<span>U</span>
+							<span>R</span>
+							<span>&nbsp;</span>
+				 			<span>B</span>
+							<span>R</span>
+							<span>A</span>
+							<span>N</span>
+							<span>D</span>
+	</h2>
 						<h3>with expert web design and marketing services</h3>
 						<div class="button herobtn">
 							<div class="action">
