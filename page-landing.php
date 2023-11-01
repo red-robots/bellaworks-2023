@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Build a Website and a Brand</title>
+	
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!-- optionally increase loading priority -->
 	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans&display=swap">
@@ -58,7 +58,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action">
-									<a class=" bob " href="#form">
+									<a class=" bob " href="<?php bloginfo('url'); ?>/lets-do-this/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
@@ -101,7 +101,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action">
-									<a class=" bob " href="#form">
+									<a class=" bob " href="<?php bloginfo('url'); ?>/lets-do-this/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>
@@ -166,7 +166,7 @@ wp_head();
 						<div class="center">
 							<div class="button white">
 								<div class="action last">
-									<a class=" bob " href="#form">
+									<a class=" bob " href="<?php bloginfo('url'); ?>/lets-do-this/">
 										<div class="circle">
 											<span class="icon arrow"></span>
 										</div>

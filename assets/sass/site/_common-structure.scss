@@ -512,6 +512,8 @@ section.social-side {
 #leadmagnet {
 	color: #fff;
 	padding: 50px;
+	width: 100%;
+	position: relative;
 	@media screen and (min-width: $tabwidth) {
 		width: 80%;
 		margin: auto;

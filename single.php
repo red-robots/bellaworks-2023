@@ -32,6 +32,24 @@ get_header(); ?>
 
 								<?php the_content(); ?>
 							</article>
+							<footer class="links">
+								<div class="tags">
+									Categorized: 
+									<?php
+									foreach(get_the_category($post->ID) as $cat) {
+									    echo '<li><a href="' . get_tag_link($cat->term_id) . '">' . $cat->name . '</a></li>';
+									}
+									?>
+								</div>
+								<div class="tags">
+									Tagged: 
+									<?php
+									foreach(get_the_tags($post->ID) as $tag) {
+									    echo '<li><a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a></li>';
+									}
+									?>
+								</div>
+							</footer>
 						</section>
 						
 						<?php get_template_part('template-parts/single-side'); ?>

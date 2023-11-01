@@ -1678,7 +1678,27 @@ section.service-page {
 		display: none;
 	}
 }
-
+footer.links {
+	width: 100%;
+	padding: 20px 0;
+	border-top: 1px solid #4e5356;
+	border-bottom: 1px solid #4e5356;
+	margin-top: 40px;
+	float: left;
+	.tags {
+		li {
+			display: inline-block;
+			list-style: none;
+			margin: 0 5px;
+		}
+	}
+}
+.alt-down {
+	width: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
 
 
 
