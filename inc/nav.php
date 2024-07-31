@@ -34,7 +34,7 @@
     		<a href="<?php bloginfo('url'); ?>/news">News</a>
 	    </li>
     	<li>
-    		<a href="<?php bloginfo('url'); ?>/contact">Contact</a>
+    		<a href="<?php bloginfo('url'); ?>/contact-us">Contact</a>
     	</li>
     	<!-- <li>Buy
 	    	<ul class="dropdown">
